@@ -1,0 +1,55 @@
+.app-layout {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Main area starts after the sidebar */
+.app-main {
+  min-height: 100vh;
+  margin-left: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #f5f7fa;
+}
+
+/* Topbar stays inside the main area */
+.app-main .topbar {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Page content */
+.app-content {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+
+  padding: 24px 28px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .app-main {
+    margin-left: 220px;
+  }
+
+  .app-content {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-main {
+    margin-left: 0;
+  }
+
+  .app-content {
+    padding: 16px;
+  }
+}

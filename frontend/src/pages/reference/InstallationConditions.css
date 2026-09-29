@@ -1,0 +1,856 @@
+/* =========================================================
+   installation PAGE
+   ========================================================= */
+
+.installation-page {
+  min-height: 100%;
+  background: #f5f7fa;
+  padding: 30px;
+  color: #17212f;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.installation-header {
+  max-width: 1450px;
+  margin: 0 auto 24px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.installation-header-content {
+  min-width: 0;
+}
+
+.installation-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a97a8;
+}
+
+.installation-breadcrumb span {
+  color: #b9c1cb;
+}
+
+.installation-title-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.installation-title-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff1e8;
+  color: #ea6814;
+
+  border: 1px solid #ffd9c1;
+  border-radius: 11px;
+
+  flex-shrink: 0;
+}
+
+.installation-title-row h1 {
+  margin: 0 0 4px;
+
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+
+  color: #17212f;
+}
+
+.installation-title-row p {
+  margin: 0;
+
+  font-size: 13px;
+  color: #7b8796;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+   ========================================================= */
+
+.installation-add-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 40px;
+  padding: 0 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #ea6814;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.installation-add-button:hover {
+  background: #d85d10;
+  box-shadow: 0 5px 14px rgba(234, 104, 20, 0.2);
+}
+
+.installation-add-button:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.installation-alert {
+  max-width: 1450px;
+  margin: 0 auto 18px;
+
+  min-height: 44px;
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+}
+
+.installation-alert button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.installation-alert-success {
+  background: #ecfdf3;
+  border: 1px solid #b7ebca;
+  color: #167443;
+}
+
+.installation-alert-success button {
+  color: #167443;
+}
+
+.installation-alert-error {
+  background: #fff1f1;
+  border: 1px solid #f4c4c4;
+  color: #b42318;
+}
+
+.installation-alert-error button {
+  color: #b42318;
+}
+
+
+/* =========================================================
+   MAIN CARD
+   ========================================================= */
+
+.installation-card {
+  max-width: 1450px;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e7ec;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(20, 31, 45, 0.04);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.installation-card-header {
+  min-height: 78px;
+
+  padding: 18px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-bottom: 1px solid #e8ebef;
+}
+
+.installation-card-header h2 {
+  margin: 0 0 4px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #202b3a;
+}
+
+.installation-card-header p {
+  margin: 0;
+
+  font-size: 12px;
+  color: #8a96a5;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.installation-search {
+  width: 270px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  border: 1px solid #dce1e7;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #8995a4;
+}
+
+.installation-search > svg {
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.installation-search input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 34px 0 9px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 12px;
+  color: #202b3a;
+}
+
+.installation-search input::placeholder {
+  color: #a0a9b5;
+}
+
+.installation-search:focus-within {
+  border-color: #ea6814;
+  box-shadow: 0 0 0 3px rgba(234, 104, 20, 0.08);
+}
+
+.installation-search-clear {
+  position: absolute;
+  right: 8px;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 5px;
+
+  background: transparent;
+  color: #8995a4;
+
+  cursor: pointer;
+}
+
+.installation-search-clear:hover {
+  background: #f1f3f5;
+  color: #202b3a;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.installation-loading {
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: #8995a4;
+
+  font-size: 13px;
+}
+
+.installation-spinner {
+  animation: installation-spin 1s linear infinite;
+}
+
+@keyframes installation-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.installation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.installation-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  min-width: 650px;
+}
+
+.installation-table thead {
+  background: #f8f9fb;
+}
+
+.installation-table th {
+  padding: 13px 22px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e4e8ed;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+
+  color: #7d8998;
+}
+
+.installation-table td {
+  padding: 14px 22px;
+
+  border-bottom: 1px solid #edf0f3;
+
+  font-size: 13px;
+
+  color: #354153;
+}
+
+.installation-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.installation-table tbody tr:hover {
+  background: #fffaf6;
+}
+
+.installation-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.installation-column-number {
+  width: 70px;
+}
+
+.installation-column-action {
+  width: 130px;
+  text-align: right !important;
+}
+
+.installation-row-number {
+  color: #9aa5b3 !important;
+  font-size: 12px !important;
+}
+
+.installation-code {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 9px;
+
+  background: #fff1e8;
+  border: 1px solid #ffd9c1;
+  border-radius: 6px;
+
+  color: #c9520c;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.installation-name {
+  font-weight: 500;
+  color: #263242;
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+   ========================================================= */
+
+.installation-action-cell {
+  text-align: right;
+}
+
+.installation-edit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  min-height: 31px;
+  padding: 0 10px;
+
+  border: 1px solid #dfe4e9;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #596678;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.installation-edit-button:hover {
+  border-color: #f1b48d;
+  background: #fff8f3;
+  color: #d85d10;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.installation-empty {
+  height: 230px;
+
+  text-align: center !important;
+
+  color: #9aa5b3 !important;
+}
+
+.installation-empty > svg {
+  margin-bottom: 10px;
+  color: #c0c8d2;
+}
+
+.installation-empty div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.installation-empty strong {
+  color: #596678;
+  font-size: 13px;
+}
+
+.installation-empty span {
+  font-size: 12px;
+  color: #9aa5b3;
+}
+
+
+/* =========================================================
+   MODAL OVERLAY
+   ========================================================= */
+
+.installation-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(8, 15, 25, 0.58);
+
+  backdrop-filter: blur(3px);
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.installation-modal {
+  width: 100%;
+  max-width: 500px;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MODAL HEADER
+   ========================================================= */
+
+.installation-modal-header {
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e8ebef;
+}
+
+.installation-modal-header > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.installation-modal-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #fff1e8;
+  color: #ea6814;
+}
+
+.installation-modal-header h2 {
+  margin: 0 0 3px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #202b3a;
+}
+
+.installation-modal-header p {
+  margin: 0;
+
+  font-size: 12px;
+  color: #8a96a5;
+}
+
+.installation-modal-close {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #8793a2;
+
+  cursor: pointer;
+}
+
+.installation-modal-close:hover {
+  background: #f2f4f6;
+  color: #263242;
+}
+
+.installation-modal-close:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+/* =========================================================
+   MODAL ERROR
+   ========================================================= */
+
+.installation-modal-error {
+  margin: 16px 22px 0;
+  padding: 10px 12px;
+
+  border: 1px solid #f2c2c2;
+  border-radius: 7px;
+
+  background: #fff2f2;
+  color: #b42318;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.installation-form-body {
+  padding: 22px;
+}
+
+.installation-form-group {
+  margin-bottom: 20px;
+}
+
+.installation-form-group:last-child {
+  margin-bottom: 0;
+}
+
+.installation-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #354153;
+}
+
+.installation-form-group input {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d9dfe6;
+  border-radius: 7px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #202b3a;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.installation-form-group input::placeholder {
+  color: #a1aab6;
+}
+
+.installation-form-group input:focus {
+  border-color: #ea6814;
+  box-shadow: 0 0 0 3px rgba(234, 104, 20, 0.08);
+}
+
+.installation-form-group input:disabled {
+  background: #f5f6f8;
+  cursor: not-allowed;
+}
+
+.installation-form-group > span {
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 11px;
+  color: #929dab;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+   ========================================================= */
+
+.installation-modal-footer {
+  padding: 15px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  background: #fafbfc;
+
+  border-top: 1px solid #e8ebef;
+}
+
+.installation-cancel-button,
+.installation-save-button {
+  min-height: 37px;
+
+  padding: 0 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.installation-cancel-button {
+  border: 1px solid #dce1e7;
+
+  background: #ffffff;
+  color: #596678;
+}
+
+.installation-cancel-button:hover {
+  background: #f5f6f8;
+}
+
+.installation-save-button {
+  border: 1px solid #ea6814;
+
+  background: #ea6814;
+  color: #ffffff;
+}
+
+.installation-save-button:hover {
+  background: #d85d10;
+  border-color: #d85d10;
+}
+
+.installation-save-button:disabled,
+.installation-cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .installation-page {
+    padding: 20px;
+  }
+
+  .installation-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .installation-add-button {
+    width: 100%;
+  }
+
+  .installation-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .installation-search {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .installation-page {
+    padding: 15px;
+  }
+
+  .installation-title-row {
+    align-items: flex-start;
+  }
+
+  .installation-title-row h1 {
+    font-size: 21px;
+  }
+
+  .installation-modal-overlay {
+    padding: 12px;
+  }
+
+  .installation-modal-header {
+    padding: 17px;
+  }
+
+  .installation-form-body {
+    padding: 17px;
+  }
+
+  .installation-modal-footer {
+    padding: 13px 17px;
+  }
+
+  .installation-cancel-button,
+  .installation-save-button {
+    flex: 1;
+  }
+
+}
+
